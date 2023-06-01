@@ -19,8 +19,9 @@ app.get("/",(req,res)=>{
 })
 
 
-// app.use(authentication)
+
 app.use("/api",userRouter)
+app.use(authentication)
 app.use("/api/restaurants",restaurantRouter)
 
 
